@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>
+        Imersão Dev - Aula 05
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Aluraflix
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+            alt="">
+        <p class="page-subtitle">
+            Qual seu filme favorito?
+        </p>
+        <div class="form-wrapper">
+            <input type="text" id="imageMovie" name="imageMovie" placeholder="Insira endereço de imagem (.jpg, .jpeg, .png)">
+            <button onClick="addMovie()">Adicionar Filme</button>
+        </div>
+    </div>
+    <div id="moviesList">
+        <div class="movie" style="background-image:url(https://assets0.minhaserie.com.br/uploads/editor_pictures/000/050/824/content_pic.jpg)">
+            <div class="buttons">
+                <button class="remove-button" onclick="removeMovie(this)"><i class="fas fa-trash-alt"></i></button>
+                <button class="trailer-button" onclick="modalOpen()"><i class="fas fa-play-circle"></i></button>
+            </div>
+        </div>
+        <div class="movie" style="background-image:url(https://i.pinimg.com/236x/27/04/ee/2704ee6494308b58ba3968f17354596f.jpg)">
+            <div class="buttons">
+                <button class="remove-button" onclick="removeMovie(this)"><i class="fas fa-trash-alt"></i></button>
+                </a><button class="trailer-button" onclick="modalOpen()"><i class="fas fa-play-circle"></i></button>
+            </div>
+        </div>
+        <div class="movie" style="background-image:url(https://sala7design.com.br/wp-content/uploads/2017/10/wxp4lfoqdqvai6fmx3qk.png)">
+            <div class="buttons">
+                <button class="remove-button" onclick="removeMovie(this)"><i class="fas fa-trash-alt"></i></button>
+                </a><button class="trailer-button" onclick="modalOpen()"><i class="fas fa-play-circle"></i></button>
+            </div>
+        </div>
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+    <div class="modalOverlay" >
+        <div class="modal" >
+            <div  id="modalContent">
+            </div>
+            <div class="closeModal">
+                <span onclick="modalClose()">FECHAR</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
